@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>PAGE POTINS</title>
+  </head>
+  <body>
+    <h1>PAGE DE POTINS</h1>
+    
+    <h2>Voici la page du potin n°<%=params['id'].to_i%> 
+
+    </h2>
+    <h4>Son auteur est : <%= gossip[params['id'].to_i].author %> 
+    </h4>
+    <h4>Le contenu du potin est : <%= gossip[params['id'].to_i].content%> </h4>    
+
+    <h3><a href="/">Lien pour revenir à la page des potins</a></h3>
+
+  </body>
+</html>

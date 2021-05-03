@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>EDITION GOSSIP</title>
+  </head>
+  <body>
+    <h1>Editer un Gossip</h1>
+
+    <h2> Ce potin n'est pas à ton goût? Tu souhaite le modifier?</br>
+    Vas-y grâce au formulaire ci-dessous</h2>
+
+    <form action="/gossips/<%=params['id'].to_i%>/edit" method='POST'>
+      Saisi ici ton nom : <input type='text' name='gossip_author' /><br/>
+      Modifie le potin : <input type='text' name='gossip_content' /><br/>
+      <input type='submit'/>
+    </form>
+
+    <h3><a href="/">Lien pour revenir à la page d'acceuil</a></h3>
+
+  </body>
+</html>

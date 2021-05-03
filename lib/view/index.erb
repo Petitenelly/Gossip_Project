@@ -1,0 +1,28 @@
+<html>
+
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+
+  <body>
+    <h1>Bienvenue sur le <span style="color: red">super</span> site de potins de THP !<h1>
+      
+    <a href="/gossips/new/">Clique ici </a> pour ajouter un potin</a>
+
+    <!--prend pour gossip chaque valeur de author, content et index pour le lien-->
+
+    <% gossip.each do |gossip,index| %>
+      <p>
+      <%= gossip.author %><br/>
+      <%= gossip.content %><br/>
+      <a href="/gossips/<%= index %>"> Lien vers le potin</a>
+      </p>
+    <% end %>
+
+  </body>
+</html>
+
+    
+        
+   
+   
